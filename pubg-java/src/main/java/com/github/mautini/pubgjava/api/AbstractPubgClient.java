@@ -142,7 +142,7 @@ public abstract class AbstractPubgClient {
                         Class c = Class.forName(TELEMETRY_PACKAGE_NAME + type);
                         return context.deserialize(json, c);
                     } catch (ClassNotFoundException e) {
-                        e.printStackTrace();
+                        //e.printStackTrace();
                     }
 
                     return null;
